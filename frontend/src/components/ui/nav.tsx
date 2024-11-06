@@ -5,7 +5,7 @@ import Link from "next/link";
 import { deleteCookie } from "@/app/actions";
 
 export default function Nav(
-  cookieData: Record<string, string> | undefined,
+  cookieData: RequestCookie | undefined,
   correo: Record<string, string> | undefined,
 ) {
   // Estado para controlar si el menú lateral está abierto o cerrado
