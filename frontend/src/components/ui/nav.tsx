@@ -6,8 +6,8 @@ import { deleteCookie } from "@/app/actions";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 export default function Nav(
-  cookieData: RequestCookie | undefined,
-  correo: Record<string, string> | undefined,
+  cookieData: any,
+  correo: any,
 ) {
   // Estado para controlar si el menú lateral está abierto o cerrado
   const [isMenuOpen, setIsMenuOpen] = useState(false);
