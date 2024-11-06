@@ -25,7 +25,7 @@ export default async function RootLayout({
     <html lang="es">
       <body className={`${inter.className} min-h-screen bg-transparent`}>
         <NextAuthProvider>
-          <Nav accessToken={accessToken} correo={correo} />
+          <Nav cookieData={accessToken} correo={correo} />
           <main>
             {children}
           </main>
