@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "./nav.module.css";
 import Link from "next/link";
 import { deleteCookie } from "@/app/actions";
+import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 export default function Nav(
   cookieData: RequestCookie | undefined,
